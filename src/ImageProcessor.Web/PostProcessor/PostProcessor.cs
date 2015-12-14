@@ -21,7 +21,7 @@ namespace ImageProcessor.Web.PostProcessor
     /// The image postprocessor.
     /// Many thanks to Azure Image Optimizer <see href="https://github.com/ligershark/AzureJobs"/>
     /// </summary>
-    internal static class PostProcessor
+    public static class PostProcessor
     {
         /// <summary>
         /// Post processes the image asynchronously.

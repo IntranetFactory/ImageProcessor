@@ -358,7 +358,7 @@ namespace ImageProcessor.Web.HttpModules
             HttpContext context = ((HttpApplication)sender).Context;
             object cachedPathObject = context.Items[CachedPathKey];
 
-            if (cachedPathObject != null)
+            if (cachedPathObject != null && this.imageCache != null)
             {
                 // Trim the cache.
                 await this.imageCache.TrimCacheAsync();

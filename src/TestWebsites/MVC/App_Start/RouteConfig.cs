@@ -14,6 +14,11 @@ namespace Test_Website_NET45
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "RemoteImage",
+                url: "rimage/{*url}",
+                defaults: new { controller = "RemoteImage", action = "Index", url = UrlParameter.Optional }
+            );
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }

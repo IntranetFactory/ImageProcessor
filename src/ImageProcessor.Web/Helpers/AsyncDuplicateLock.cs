@@ -24,7 +24,7 @@ namespace ImageProcessor.Web.Helpers
     /// allowing a high throughput.
     /// <see href="http://stackoverflow.com/a/31194647/427899"/>
     /// </summary>
-    internal sealed class AsyncDuplicateLock
+    public sealed class AsyncDuplicateLock
     {
         /// <summary>
         /// A collection of reference counters used for tracking references to the same object.
